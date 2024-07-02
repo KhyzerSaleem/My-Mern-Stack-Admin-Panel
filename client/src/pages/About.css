@@ -1,0 +1,110 @@
+/* Grid System */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about-section {
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+  
+  .about-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .about-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn-group {
+    display: flex;
+    gap: 10px; /* Spacing between buttons */
+    justify-content: center; /* Center align buttons horizontally */
+    margin: 20px 0; /* Top and bottom margin */
+  }
+  
+  .btn-group .btn {
+    background-color: hsl(28, 88%, 62%); /* Primary blue background color */
+    color: #ffffff; /* White text color */
+    padding: 10px 20px; /* Padding for buttons */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background and transform */
+    width: 200px;
+  }
+  
+  .btn-group .btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+  }
+  
+  .btn-group .btn:active {
+    background-color: #004494; /* Slightly darker blue when active */
+    transform: scale(0.95); /* Slightly decrease size when active */
+  }
+  
+  .btn-group .btn:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Custom focus outline */
+  }
+  
+
+
+
+
+
+
+
+
+  
+  /* Media Queries */
+  @media (max-width: 992px) {
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-text {
+      text-align: center;
+    }
+  
+    .about-text h1 {
+      font-size: 2.5rem;
+    }
+  
+    .about-text p {
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,154 @@
+/* Styles for contact us page */
+.contact-us-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-container {
+    width: 50%;
+    padding-right: 20px; /* Space between image and form */
+    text-align: center;
+}
+
+.form-container {
+    width: 30%;
+    /* height: calc(97vh - 60px); */
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+
+}
+
+form {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    height: 300px;
+}
+
+.form-container h2{
+    color: var(--first-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--first-color);
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    padding: 10px;
+    background-color: var(--first-color);
+    color: var(--title-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+.form-container form  button:hover {
+    background-color: hsl(28, 88%, 52%);
+  }
+
+/* Map Styles */
+.map-container {
+    width: 100%;
+    height: 450px;
+    max-width: 1000px;
+    margin: 100px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+  }
+
+
+/* Responsive adjustments */
+
+
+
+
+
+
+
+@media (max-width: 899px) {
+    .image-container img {
+        max-width: 100%;
+    }
+    .form-container {
+        width: 40%;
+        padding-right: 0;
+        text-align: center;
+    }
+    .map-container iframe {
+        height: 300px;
+        margin: 20px;
+      }
+}
+
+@media (max-width: 768px) {
+    .contact-us-page {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container,
+    .form-container {
+        width: 100%;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .image-container {
+        margin-bottom: 20px;
+    }
+    
+    .image-container img {
+        max-width: 80%;
+    }
+
+    .form-container {
+        margin: -20px;
+        width: 80%;
+      }
+
+    .map-container iframe {
+        height: 300px;
+        margin: 20px;
+      }
+}
+
+@media (max-width: 576px) {
+    .form-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .map-container iframe {
+      height: 250px;
+    }
+  }

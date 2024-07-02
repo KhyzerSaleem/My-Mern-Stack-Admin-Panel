@@ -1,0 +1,90 @@
+/* Styles for login page */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.image-container {
+    width: 50%;
+    height: 70vh;
+    padding-right: 20px; /* Space between image and form */
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%; 
+}
+
+.form-container {
+    width: 40%;
+    height: 70vh;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+button {
+    background-color: var(--first-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .login-page {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container,
+    .form-container {
+        width: 100%;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .image-container {
+        margin-bottom: 20px;
+    }
+
+    .image-container img {
+        max-width: 80%; /* Reduce image size on smaller screens */
+    }
+}

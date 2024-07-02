@@ -1,0 +1,18 @@
+/* Styles for footer */
+.footer {
+    background: linear-gradient(109.7deg, rgb(210, 74, 44) 5.7%, rgb(252, 195, 12) 92.4%);
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    color: black;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer {
+        position: relative;
+    }
+}

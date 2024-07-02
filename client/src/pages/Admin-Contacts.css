@@ -1,0 +1,87 @@
+.admin-contacts-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-contacts-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .admin-contacts-loading,
+  .admin-contacts-error {
+    font-size: 18px;
+    color: hsl(28, 94%, 51%);
+    text-align: center;
+  }
+  
+  .admin-contacts-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .admin-contact-item {
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .admin-contact-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .admin-contact-item:last-child {
+    border-bottom: none;
+  }
+  
+  .contact-username {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .contact-email {
+    color: #666;
+  }
+  
+  .contact-message {
+    color: #888;
+  }
+
+  
+
+  .btn {
+    background-color: hsl(28, 88%, 62%) ; /* Red background color */
+    color: #ffffff; /* White text color */
+    padding: 10px 20px; /* Padding for button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background and transform */
+    width: 100px;
+  }
+  
+  .btn:hover {
+    background-color: blue; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+  }
+  
+  .btn:active {
+    background-color: #d94343; /* Slightly darker red when active */
+    transform: scale(0.95); /* Slightly decrease size when active */
+  }
+  
+  .btn:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(255, 76, 76, 0.5); /* Custom focus outline */
+  }
+  

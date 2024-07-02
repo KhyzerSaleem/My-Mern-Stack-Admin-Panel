@@ -1,0 +1,91 @@
+.header {
+  /* background-color: rgb(95, 86, 105) ; */
+  padding: 50px 20px;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  position: fixed; /* Make navbar fixed */
+  width: 100%; /* Full width */
+  top: 0; /* Align to top */
+  left: 0;
+  z-index: 1000; /* Make sure it's on top of other content */
+  transition: background-color 0.3s;
+}
+
+.header.scrolled {
+  background-color: #333;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-height);
+  margin: 1rem;
+}
+
+.nav-logo {
+  color: var(--first-color);
+  transition: color 0.4s;
+  font-size: 40px;
+  font-family: var(--second-font);
+  margin-left: 80px;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  margin: 0 30px;
+}
+
+.nav-item:hover {
+  color: var(--first-color);
+  transition: 0.4s;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .nav {
+    justify-content: space-between;
+  }
+  .nav-logo{
+    flex-grow: 1;
+    text-align: center;
+    margin-left: 0;
+  }
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 100px;
+    left: -100%;
+    background: #333;
+    transition: 0.3s all ease-in-out;
+  }
+
+  .nav-menu-active {
+    left: 0;
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+  }
+}

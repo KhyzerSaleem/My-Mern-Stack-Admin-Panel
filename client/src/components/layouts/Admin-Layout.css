@@ -1,0 +1,97 @@
+header {
+  padding: 1rem;
+  color: white;
+  /* background-color: #282c34; */
+}
+
+.admin-nav {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: fixed;
+  overflow-y: hidden;
+  top: 0;
+  left: 0;
+  width: 270px;
+  background-color: #343a40;
+  padding-top: 60px;
+}
+
+.admin-nav h1 {
+  margin: 0;
+  margin-top: 40%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.admin-nav nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.admin-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.admin-nav li {
+  margin: 1rem 0;
+}
+
+.admin-nav li a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.admin-nav li a:hover {
+  background-color: #495057;
+  color: #ffcc00;
+}
+
+.admin-nav li a svg {
+  margin-right: 8px;
+}
+
+.admin-content {
+  margin-left: 250px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.admin-content h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #343a40;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .admin-nav {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 0;
+  }
+
+  .admin-nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .admin-nav li {
+    margin: 0;
+  }
+
+  .admin-content {
+    margin-left: 0;
+    padding: 10px;
+  }
+}

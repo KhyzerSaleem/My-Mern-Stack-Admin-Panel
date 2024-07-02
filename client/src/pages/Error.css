@@ -1,0 +1,86 @@
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .not-found-text {
+    font-size: 15rem; /* Adjust font size as needed */
+    font-family: 'Arial', sans-serif; /* Choose an appropriate font family */
+    color: #333; 
+    margin-bottom: 20px;
+  }
+
+  .not-found-text:hover{
+    color: yellow;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  .not-found-message {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    color: #666; /* Adjust color as needed */
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+
+
+/* CSS */
+.button {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(250, 178, 23, 0.2) 0 -25px 18px -14px inset,rgba(252, 166, 7, 0.15) 0 1px 2px,rgba(240, 159, 10, 0.836) 0 2px 4px,rgba(247, 212, 13, 0.15) 0 4px 8px,rgba(212, 164, 4, 0.15) 0 8px 16px,rgba(221, 154, 9, 0.15) 0 16px 32px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    color: orangered;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+.button:hover {
+  box-shadow: rgba(233, 91, 9, 0.35) 0 -25px 18px -14px inset,rgba(236, 95, 13, 0.25) 0 1px 2px,rgba(245, 152, 12, 0.25) 0 2px 4px,rgba(223, 89, 11, 0.25) 0 4px 8px,rgba(235, 173, 5, 0.25) 0 8px 16px,rgba(235, 98, 7, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+  
+  @media (max-width: 768px) {
+    .not-found-text {
+      font-size: 6rem; /* Adjust font size for smaller screens */
+    }
+  
+    .button-container {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  
+    .button {
+      margin: 10px 0;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+  
